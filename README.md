@@ -63,4 +63,4 @@ In folder ./results/paper_resultS/test101 we store the results of experiment 01 
   of size P and TV inpainting as initialization
   
 #### LICENSE
-BSD 3-Clause License,
+BSD 3-Clause License.
