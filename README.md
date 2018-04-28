@@ -5,7 +5,7 @@
 
 **Authors**: Simone Parisotto, Luca Calatroni, Carola-Bibiane Schönlieb
 
-This is a companion software of the [submission](https://arxiv.org/abs/1803.07187)
+This is a companion software for the [submission](https://arxiv.org/abs/1803.07187)
 ```
 L. Calatroni, M. D’Autume, R. Hocking, S. Panayotova, S. Parisotto, P. Ricciardi, C.-B. Schönlieb, 
 "Unveiling the invisible - mathematical methods for restoring and interpreting illuminated manuscripts"
@@ -23,7 +23,7 @@ Please use the following entry to cite this code:
 ```
 
 #### Dataset Copyright
-The content and images of this work are part of the **ILLUMINATED: Manuscripts in the making*** project.
+The content and images of this work are part of the **ILLUMINATED: Manuscripts in the making** project.
 We refers to the [project website](http://www.fitzmuseum.cam.ac.uk/illuminated) for more information and the related [copyright]9http://www.fitzmuseum.cam.ac.uk/illuminated/footer/copyright?back=section/undefined) notice.
 
 
@@ -63,4 +63,4 @@ In folder ./results/paper_resultS/test101 we store the results of experiment 01 
   of size P and TV inpainting as initialization
   
 #### LICENSE
-BSD 3-Clause License
+BSD 3-Clause License,
