@@ -44,34 +44,16 @@ for LC = 1:numel(LOAD_CROP)
     switch load_crop
         case 101
             im_crop = im_orig(2756:3716,910:1600,:);
-            %         case 102
-            %             im_crop = im_orig(500:1100,950:1500,:);
-            %         case 103
-            %             im_crop = im_orig(3900:5000,2345:3120,:);
-            %         case 104
-            %             im_crop = im_orig(2930:3620,1550:2070,:);
-            %         case 105
-            %             im_crop = im_orig(470:1100,1215:1950,:);
         case 106
             im_crop = im_orig(1270:1830,430:850,:);
-            %         case 107
-            %             im_crop = im_orig(3328:3900,1730:2300,:);
-            %         case 108
-            %             im_crop = im_orig(500:1100,950:1950,:);
-            %         case 109
-            %             im_crop = im_orig(445:2270,1050:2425,:);
         case 110
             im_crop = im_orig(2950:4630,1040:2611,:);
         case 201
             im_crop = im_orig(1500:2400,2340:3000,:);
-            %         case 202
-            %             im_crop = im_orig(1290:2200,1260:1900,:);
         case 203
             im_crop = im_orig(3000:3800,425:1080,:);
         case 204
             im_crop = im_orig(2890:3620,2465:3010,:);
-            %         case 205
-            %             im_crop = im_orig(1400:2800,320:3150,:);
         otherwise
             flag_crop = 1;
             figure(1),
