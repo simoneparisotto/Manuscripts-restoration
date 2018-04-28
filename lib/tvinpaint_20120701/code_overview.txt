@@ -1,0 +1,88 @@
+
+Code Overview for Total Variation Inpainting using Split Bregman
+Pascal Getreuer, pascal.getreuer@yale.edu, Yale University
+
+
+List of Source Files
+====================
+
+This source code creates three command line programs.  The inpainting method 
+itself is implemented in the files tvreg.{c,h}, dsolve.h, and usolve_gs.h.
+
+randmask.c      Command line program that generates a random inpainting mask
+applymask.c     Command line program that applies a mask to an image
+tvinpaint.c     Command line program that performs TV-regularized inpainting
+
+tvreg.{c,h}     Implements TvRestore() the main routine for the split Bregman
+dsolve.h        Implements DSolve(), which solves the d subproblem
+usolve_gs.h     Implements UGaussSeidelVaryingLambda() for the u subproblem
+tvregopt.h      Utility and options handling functions for TvRestore()
+
+randmt.{c,h}    Mersenne Twister MT19937 pseudorandom number generator
+imageio.{c,h}   Image input and output for BMP, JPEG, PNG, and TIFF formats
+drawtext.{c,h}  Functions for drawing text onto an image (used by randmask.c)
+basic.{c,h}     Basic definitions and utilities used by all programs
+num.h           File for selecting between float vs. double for computations
+
+
+TV Inpainting
+=============
+
+The highlight of this source code is the implementation of total variation 
+(TV) regularized image inpainting using the split Bregman algorithm.  This is
+an outline of how the inpainting is performed in the tvinpaint.c code:
+
+
+main(), tvinpaint.c:73      (Program begins here)
+
+    The input image and mask are read with ReadImage().
+
+    Inpaint() is called to perform the inpainting.
+
+    The inpainted image is written with WriteImage().
+
+
+
+Inpaint(), tvinpaint.c:151
+
+    Solver parameters are set and the mask is converted to spatially-
+    varying lambda(x),
+
+        lambda(x) = { 0,        x in D,
+                    { lambda,   x not in D.
+
+    TvRestore() is called to perform the inpainting.
+
+
+
+TvRestore(), tvreg.c:98
+
+This routine is a generic solver for TV image restoration problems.  In 
+addition to inpainting, it can perform denoising and deconvolution with
+several noise models.  Since we are performing inpainting with a Gaussian
+noise model, the flags "UseZ" and "DeconvFlag" are both false.
+
+Algorithmic state is saved tvregsolver struct "S" (defined in tvregopt.h:95).
+S includes the current solution u, d, dtilde of the minimization problem and
+algorithm parameters in Opt.  S is used to pass information between solver
+subroutines.
+
+    First, TvRestoreChooseAlgorithm() is called to set algorithm flags.
+
+    Memory is allocated and initialized.
+
+    The main loop for the split Bregman iteration is on lines 261-281:
+
+        DSolve() is called to solve the d subproblem (implemented in 
+        dsolve.h).
+
+        USolveFun() calls the u-subproblem solver, UGaussSeidelVaryingLambda()
+        (implemented in usolve_gs.h).        
+
+        (Since the noise model is Gaussian, ZSolveFun() is not used.)
+
+        PlotFun() calls TvRestoreSimplePlot() to display the solution progress
+        on the screen (implemented in tvregopt.h:146).
+
+    Clean up.
+
