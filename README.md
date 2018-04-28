@@ -5,7 +5,7 @@ Date: 22/02/2018
 
 Authors: Simone Parisotto, Luca Calatroni, Carola-Bibiane Schönlieb
 
-This is a companion software for the following submission
+This is a companion software for the [following submission](https://arxiv.org/abs/1803.07187)
 ```
 L. Calatroni, M. D’Autume, R. Hocking, S. Panayotova, S. Parisotto, P. Ricciardi, C.-B. Schönlieb, 
 "Unveiling the invisible - mathematical methods for restoring and interpreting illuminated manuscripts"
@@ -31,7 +31,7 @@ experiments, named as
 ```
 
 ### Example
-In folder ./paper_result/ttest101 we store the results of experiment 01 for Manuscript 1:
+In folder ./results/paper_resultS/test101 we store the results of experiment 01 for Manuscript 1:
 - input_orig101.png: the real crop of Manuscript 1;
 - input101.png: the preprocessing (smoothing/texture removal);
 - overlap_SUPER101.png: overlap between image crop and supervised pixel inputs in blue 
@@ -46,5 +46,5 @@ In folder ./paper_result/ttest101 we store the results of experiment 01 for Manu
 - PATCHinpainted101_PxP: results of nonlocal exemplar-based inpainting result with patch 
   of size P and TV inpainting as initialization
   
-  #### LICENSE
-  BSD 3-Clause License
+#### LICENSE
+BSD 3-Clause License
