@@ -1,22 +1,28 @@
-# MANUSCRIPT RESTORATION
+# MANUSCRIPT RESTORATION
 Version 1.0
 Date: 22/02/2018
 Authors: Simone Parisotto, Luca Calatroni, Carola-Bibiane Schönlieb
 
 This is a companion software for the following submission
-L. Calatroni, M. D’Autume, R. Hocking, S. Panayotova, S. Parisotto, P. Ricciardi, C.-B. Schönlieb, Unveiling the invisible - mathematical methods for restoring and interpreting illuminated manuscripts, arXiv:1803.07187, 2018.
+```
+L. Calatroni, M. D’Autume, R. Hocking, S. Panayotova, S. Parisotto, P. Ricciardi, C.-B. Schönlieb, 
+"Unveiling the invisible - mathematical methods for restoring and interpreting illuminated manuscripts"
+arXiv:1803.07187, 2018.
+```
 
 ## SEGMENTATION + INPAINTING STEPS:
-'''
+```
 ./manuscript_segmentation.m : Matlab file for segmentation combining active contour + kmeans 
 ./manuscript_inpainting.sh : bash script for the inpainting
-'''
+```
 
 ## RESULTS:
 Each experiment is in a “paper_result/testXXX” folder where XXX is the number of the 
 experiments, named as 
+```
 - 101,102 etc if from Manuscript 1;
 - 201,202 etc if from Manuscript 2.
+```
 
 ### Example
 In folder test101 we store the results of experiment 01 for Manuscript 1:
