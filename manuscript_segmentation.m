@@ -67,7 +67,7 @@ for LC = 1:numel(LOAD_CROP)
     
     %% PREPROCESSING FOR A SMOOTHER INSPECTION
     addpath ./lib/RollingGuidanceFilter_Matlab/
-    im           = RollingGuidanceFilter(im_crop,1,0.1,4);
+    im = RollingGuidanceFilter(im_crop,1,0.1,4);
     
     %% SUPERVISED DEFECT SEGMENTATION
     fprintf('1) Selecting defects... ')
@@ -122,7 +122,6 @@ for LC = 1:numel(LOAD_CROP)
     
     % srgb2lab
     lab_im = rgb2lab(imk);
-    %lab_im = lab_im(:,:,2:3);
     Input_lab = reshape(lab_im,nrows*ncols,size(lab_im,3));
     
     % srgb2cmyk
@@ -132,7 +131,6 @@ for LC = 1:numel(LOAD_CROP)
     
     % rgb2hsv
     hsv_im = rgb2hsv(imk);
-    %hsv_im = hsv_im(:,:,1:2);
     Input_hsv = reshape(hsv_im,nrows*ncols,size(hsv_im,3));
     
     % 'chroma'
@@ -143,7 +141,7 @@ for LC = 1:numel(LOAD_CROP)
     Input = cat(2,Input_lab,Input_cmyk,Input_hsv,Input_chroma);
     
     % K-MEANS SEGMENTATION
-    nColors                       = 35; %25
+    nColors                       = 35;
     [cluster_idx, cluster_center] = kmeans(Input,nColors,'distance','sqEuclidean', 'Replicates',5,'EmptyAction','drop','MaxIter',10000);
     
     KMEANS_mask                   = reshape(cluster_idx,nrows,ncols);

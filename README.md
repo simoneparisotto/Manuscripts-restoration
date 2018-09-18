@@ -24,7 +24,7 @@ Please use the following entry to cite this code:
 
 #### Dataset Copyright
 The content and images of this work are part of the **ILLUMINATED: Manuscripts in the making** project.
-We refers to the [project website](http://www.fitzmuseum.cam.ac.uk/illuminated) for more information and the related [copyright]9http://www.fitzmuseum.cam.ac.uk/illuminated/footer/copyright?back=section/undefined) notice.
+We refers to the [project website](http://www.fitzmuseum.cam.ac.uk/illuminated) for more information and the related [copyright](http://www.fitzmuseum.cam.ac.uk/illuminated/footer/copyright?back=section/undefined) notice.
 
 
 ### Code description: segmentation and Inpainting step
