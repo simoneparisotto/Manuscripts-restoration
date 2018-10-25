@@ -4,7 +4,7 @@
 
 **Authors of this software**: Simone Parisotto and Luca Calatroni
 
-***Other authors and collaborators**: Carola-Bibiane Schönlieb, Stella Panayotova, Paola Ricciardi
+**Other authors and collaborators**: Carola-Bibiane Schönlieb, Stella Panayotova, Paola Ricciardi
 
 **Version 1.0**
 
@@ -21,8 +21,8 @@ Please use the following entry to cite the article
 ```
 @Article{CalAutHocPanParRicSch2018,
 author="Calatroni, Luca and d'Autume, Marie and Hocking, Rob 
-		and Panayotova, Stella and Parisotto, Simone 
-		and Ricciardi, Paola and Sch{\"o}nlieb, Carola-Bibiane",
+and Panayotova, Stella and Parisotto, Simone 
+and Ricciardi, Paola and Sch{\"o}nlieb, Carola-Bibiane",
 title="Unveiling the invisible: mathematical methods for restoring and interpreting illuminated manuscripts",
 journal="Heritage Science",
 year="2018",
