@@ -3,9 +3,11 @@
 <img src="https://raw.githubusercontent.com/simoneparisotto/Manuscripts-restoration/master/results/paper_results/test203/input_orig203.png" width=16%> <img src="https://raw.githubusercontent.com/simoneparisotto/Manuscripts-restoration/master/results/paper_results/test203/overlap_SUPER203.png" width=16%>  <img src="https://raw.githubusercontent.com/simoneparisotto/Manuscripts-restoration/master/results/paper_results/test203/overlap_CV203.png" width=16%> <img src="https://raw.githubusercontent.com/simoneparisotto/Manuscripts-restoration/master/results/paper_results/test203/overlap203.png" width=16%>  <img src="https://raw.githubusercontent.com/simoneparisotto/Manuscripts-restoration/master/results/paper_results/test203/TVinpainted203.png" width=16%>  <img src="https://raw.githubusercontent.com/simoneparisotto/Manuscripts-restoration/master/results/paper_results/test203/PATCHinpainted203_5x5.png" width=16%> 
 
 **Authors of this software**: Simone Parisotto and Luca Calatroni
+
 ***Other authors and collaborators**: Carola-Bibiane Schönlieb, Stella Panayotova, Paola Ricciardi
 
 **Version 1.0**
+
 **Date**: 22/02/2018
 
 This is a companion software for the [journal article](https://doi.org/10.1186/s40494-018-0216-z):
@@ -67,9 +69,9 @@ In folder ./results/paper_resultS/test101 we store the results of experiment 01 
 - PATCHinpainted101_PxP: results of nonlocal exemplar-based inpainting result with patch 
   of size P and TV inpainting as initialization
   
-#### Dataset Copyright
+### Dataset Copyright
 The content and images of this work are part of the **ILLUMINATED: Manuscripts in the making** project.
 We refers to the [project website](http://www.fitzmuseum.cam.ac.uk/illuminated) for more information and the related [copyright](http://www.fitzmuseum.cam.ac.uk/illuminated/footer/copyright?back=section/undefined) notice.
   
-#### License
+### License
 [BSD 3-Clause License](https://opensource.org/licenses/BSD-3-Clause).
