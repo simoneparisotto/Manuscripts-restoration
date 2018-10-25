@@ -17,7 +17,7 @@ L. Calatroni, M. D’Autume, R. Hocking, S. Panayotova, S. Parisotto, P. Ricciar
 Heritage Science, Springer International Publishing (2018) 6: 56. DOI: 10.1186/s40494-018-0216-z
 ```
 
-Please use the following entry to cite the article
+Please use the following entry to cite the article:
 ```
 @Article{CalAutHocPanParRicSch2018,
 author="Calatroni, Luca and d'Autume, Marie and Hocking, Rob 
@@ -74,4 +74,4 @@ The content and images of this work are part of the **ILLUMINATED: Manuscripts i
 We refers to the [project website](http://www.fitzmuseum.cam.ac.uk/illuminated) for more information and the related [copyright](http://www.fitzmuseum.cam.ac.uk/illuminated/footer/copyright?back=section/undefined) notice.
   
 ### License
-[BSD 3-Clause License](https://opensource.org/licenses/BSD-3-Clause).
+[BSD 3-Clause License](https://opensource.org/licenses/BSD-3-Clause)
