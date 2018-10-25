@@ -14,7 +14,7 @@ This is a companion software for the [journal article](https://doi.org/10.1186/s
 ```
 L. Calatroni, M. D’Autume, R. Hocking, S. Panayotova, S. Parisotto, P. Ricciardi, C.-B. Schönlieb, 
 "Unveiling the invisible - mathematical methods for restoring and interpreting illuminated manuscripts"
-Heritage Science, Springer International Publishing (2018) 6: 56. DOI: 10.1186/s40494-018-0216-z.
+Heritage Science, Springer International Publishing (2018) 6: 56. DOI: 10.1186/s40494-018-0216-z
 ```
 
 Please use the following entry to cite the article
@@ -29,7 +29,7 @@ year="2018",
 volume="6",
 number="1",
 pages="56",
-publisher="Springer International Publishing"
+publisher="Springer International Publishing",
 doi="10.1186/s40494-018-0216-z",
 url="https://doi.org/10.1186/s40494-018-0216-z"
 }
